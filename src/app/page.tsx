@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Card from "../components/cards";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <nav className="flex items-center justify-between p-6 ">
+    <main className="flex min-h-screen flex-col">
+      <nav className="flex items-center justify-between p-6 border-b-4 border-indigo-500">
         <div className="mr-6">
           <span className="font-semibold text-xl tracking-tight">SHVA</span>
         </div>
       </nav>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg px-6 py-10 md:w-2/5 md:px-20">
+      <div className="mt-4 flex grow flex-col gap-4 border-b-4 border-indigo-500 md:flex-row">
+        <div className="flex flex-col justify-center gap-6 rounded-lg px-2 py-5 md:w-2/5 md:px-20">
           <p
             className={`text-xl text-white md:text-3xl md:leading-normal`}
           >
@@ -20,16 +21,20 @@ export default function Home() {
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
             src="/profileface.png"
-            width={1000}
-            height={760}
-            className="hidden md:block"
+            width={600}
+            height={360}
+            className="transition duration-300 ease-in-out hover:scale-105 hover:transform-gpu hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
             priority={true}
           />
         </div>
       </div>
-      <div className="flex flex-row flex-wrap shrink gap-1 justify-around justify-items-center content-center">
-        {/* projects carousel */}
+      <div className="flex grow mr-5 p-5 justify-center place-content-center">
+        <div>
+          <p className="text-3xl">Projects</p>
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap gap-6 justify-around items-center p-5 mr-5 border-b-4 border-indigo-500">
         <Card
           title="Localnfo"
           description="Get the information about your locality with a single search"
@@ -38,7 +43,7 @@ export default function Home() {
         />
         <Card
           title="YTWatchParty"
-          description="Watch Youtube Videos with your friends all the controls are synchronized"
+          description="Watch YT videos with your friends all the controls are synchronized"
           imageUrl="/YTWatchparty.png"
           link="https://github.com/shhvva/YTWatchparty"
         />
@@ -55,28 +60,19 @@ export default function Home() {
           link="https://github.com/shhvva/BMI"
         />
       </div>
-      <div className="flex flex-row flex-wrap gap-6 justify-between items-center">
-        <div>
-          <a href="https://github.com/shhvva" target='_blank'>
-            <span className="font-semibold text-xl tracking-tight">
-              Github
-            </span>
-          </a>
-        </div>
-        <div>
-          <a href="mailto:mendeshivashankar@gmail.com" target='_blank'>
-            <span className="font-semibold text-xl tracking-tight">
-              Mail
-            </span>
-          </a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/shiva-shankar-mende-5bb1a1291/" target='_blank'>
-            <span className="font-semibold text-xl tracking-tight">
-              Linkedin
-            </span>
-          </a>
-        </div>
+      <div className="flex flex-row flex-wrap gap-6 justify-between items-center p-5 mr-5">
+        <Footer
+          title="Github"
+          link="https://github.com/shhvva"
+        />
+        <Footer
+          title="Mail"
+          link="mailto:mendeshivashankar@gmail.com"
+        />
+        <Footer
+          title="Linkedin"
+          link="https://www.linkedin.com/in/shiva-shankar-mende-5bb1a1291/"
+        />
       </div>
     </main >
 
