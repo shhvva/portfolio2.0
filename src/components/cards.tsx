@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, link }) => {
                         width={500}
                     />
                     }
-                    <h2>{title}</h2>
+                    <h2 className='text-lg font-bold'>{title}</h2>
                     <p>{description}</p>
                 </div>
             </a>

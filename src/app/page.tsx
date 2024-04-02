@@ -29,12 +29,12 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex grow mr-5 p-5 justify-center place-content-center">
+      <div className="flex grow p-5 justify-center place-content-center">
         <div>
-          <p className="text-3xl">Projects</p>
+          <p className="text-3xl font-semibold">Projects</p>
         </div>
       </div>
-      <div className="flex flex-row flex-wrap gap-6 justify-around items-center p-5 mr-5 border-b-4 border-indigo-500">
+      <div className="flex flex-row flex-wrap gap-6 justify-around items-center p-5 border-b-4 border-indigo-500">
         <Card
           title="Localnfo"
           description="Get the information about your locality with a single search"
@@ -54,13 +54,13 @@ export default function Home() {
           link="https://github.com/shhvva/FoodDesc"
         />
         <Card
-          title="BMI"
+          title="BMI Calculator"
           description="BMI calculator can calculate your BMI between any units"
           imageUrl="/BMI.png"
           link="https://github.com/shhvva/BMI"
         />
       </div>
-      <div className="flex flex-row flex-wrap gap-6 justify-between items-center p-5 mr-5">
+      <div className="flex flex-row flex-wrap gap-6 justify-between items-center p-6">
         <Footer
           title="Github"
           link="https://github.com/shhvva"
