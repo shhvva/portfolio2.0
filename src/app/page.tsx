@@ -15,7 +15,7 @@ export default function Home() {
           <p
             className={`text-xl text-white md:text-3xl md:leading-normal`}
           >
-            Heyyy,<br></br>I am <strong>Shiva Shankar</strong>, a developer with a fervor for continuous learning in the ever-evolving realm of Computer Science.
+            Heyyy,<br></br>I am <strong>Shiva Shankar</strong>, a developer with a fervour for continuous learning in the ever-evolving realm of Computer Science.
           </p>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
