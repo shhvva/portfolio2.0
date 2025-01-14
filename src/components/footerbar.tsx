@@ -14,7 +14,7 @@ export default function Footerbar() {
               </h2>
             </Cover>
             <p className="text-lg text-gray-300">
-              Let's connect and create something amazing together!
+              Lets connect and create something amazing together!
             </p>
           </div>
           <div className="w-full md:w-3/5">
