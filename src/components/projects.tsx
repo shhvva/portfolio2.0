@@ -17,7 +17,7 @@ export const products = [
     description:
       "SharePics is a modern web application that allows users to share pictures, create posts, and interact with other users' content. Built with Next.js and featuring robust authentication through Kinde.",
     link: "https://github.com/shhvva/SharePics",
-    thumbnail: "/SharePics.png",
+    thumbnail: "/Sharepics.png",
   },
   {
     title: "Predicting Drug Drug Interaction",
@@ -54,7 +54,7 @@ export const products = [
     description:
       "MovieRevs is a responsive web application that provides users with information about movies. The app showcases my ability to implement component-based architecture, state management, and search feature.",
     link: "https://github.com/shhvva/MovieRevs",
-    thumbnail: "/MovieRevs.png",
+    thumbnail: "/Movierevs.png",
   },
   {
     title: "Skill-HUB",
@@ -104,8 +104,7 @@ export const products = [
     description:
       "This is a web template using Next 15, Kinde, and PostgreSQL using Prisma and Docker.This helps anyone get a jump start on building a website by skipping the setup process.",
     link: "https://github.com/shhvva/web-template",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    thumbnail: "/webtemplate.png",
   },
   {
     title: "15",
